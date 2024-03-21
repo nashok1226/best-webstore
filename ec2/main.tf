@@ -1,10 +1,10 @@
 data "aws_ami" "main" {
   most_recent = true
-  owners      = ["099720109477"]
+  owners      = [var.ami_owners]
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+    values = [var.ami_name_string]
   }
 }
 
@@ -22,7 +22,7 @@ resource "aws_instance" "main" {
     Name = var.ec2_name
   }
 
-  user_data = file("${path.cwd}/ec2_install_apache.sh")
+  user_data = var.user_data
 
   #depends_on = [ module.vpc.natgw_route ]
 }

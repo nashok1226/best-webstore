@@ -2,7 +2,7 @@ variable "vpc_cidr" {}
 variable "private_cidrs" {}
 variable "public_cidrs" {}
 variable "vpc_name" {}
-variable "security_groups" {}
+#variable "security_groups" {}
 variable "public_sg_name" {}
 variable "private_sg_name" {}
 variable "lb_listner_port" {}
@@ -19,4 +19,3 @@ resource "random_shuffle" "az_list" {
   result_count = 20
 
 }
-

@@ -9,3 +9,7 @@ output "web_public-sg" {
 output "web_private_sg" {
   value = module.vpc.web_private_sg
 }
+
+output "web_fe_lb" {
+  value = module.alb.web_lb_id
+}
