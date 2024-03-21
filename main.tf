@@ -17,7 +17,6 @@ module "vpc" {
   private_cidrs      = [for i in range(2, 7, 2) : cidrsubnet(var.vpc_cidr, 7, i)]
   public_cidrs       = [for i in range(1, 7, 2) : cidrsubnet(var.vpc_cidr, 7, i)]
   vpc_name           = var.vpc_name
-  #security_groups    = local.security_groups
   public_sg_name     = var.public_sg_name
   private_sg_name    = var.private_sg_name
   ec2_web_port       = var.web_port
@@ -29,7 +28,8 @@ module "vpc" {
 module "ec2" {
   source           = "./ec2"
   instance_profile = module.iam.ec2_instance_profile
-  private_subnet   = module.vpc.private_subnet
+  #private_subnet   = module.vpc.private_subnet
+  private_subnet   = module.vpc.public_subnet
   ec2_type         = var.ec2_type
   ec2_vol_size     = var.ec2_vol_size
   ec2_name         = var.ec2_name
