@@ -1,8 +1,9 @@
 # tf-webstore
 
 For executing the tf scripts, please follow the below steps:
+(Can be run against any blank aws account, default VPC is not used)
 
-1. Export the AWs credentails
+1. Export the AWS credentails
 
     export AWS_ACCESS_KEY_ID="XXXX"
     export AWS_SECRET_ACCESS_KEY="XXXX"
