@@ -7,7 +7,7 @@ For executing the tf scripts, please follow the below steps:
     export AWS_ACCESS_KEY_ID="XXXX"
     export AWS_SECRET_ACCESS_KEY="XXXX"
 
-2. terraform  plan -var-file=best.tfvars
+2. To run the tf-code input the vars file ::  terraform  plan -var-file=best.tfvars
 
 3. output will print the web url like:
     web_fqdn = "http://web-http-lb-xxxxxxxx.eu-central-1.elb.amazonaws.com"
