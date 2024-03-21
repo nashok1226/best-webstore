@@ -1,0 +1,12 @@
+variable "alb_name" {}
+variable "public_subnet" {}
+variable "tg_port" {}
+variable "tg_protocol" {}
+variable "vpc_id" {}
+variable "healthy_threshold" {}
+variable "unhealthy_threshold" {}
+variable "tg_timeout" {}
+variable "tg_interval" {}
+variable "listner_port" {}
+variable "listner_protocol" {}
+variable "web_public_sg" {}
