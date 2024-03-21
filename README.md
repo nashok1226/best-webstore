@@ -10,4 +10,8 @@ For executing the tf scripts, please follow the below steps:
 2. terraform  plan -var-file=best.tfvars
 
 3. output will print the web url like:
-    web_fqdn = "http://web-http-lb-596885706.eu-central-1.elb.amazonaws.com"
+    web_fqdn = "http://web-http-lb-xxxxxxxx.eu-central-1.elb.amazonaws.com"
+
+4. Any modification on the input parameters could be made on the file "best.tfvars"
+
+5. Any change in the user_data script on "ec2_install_apache.sh"
