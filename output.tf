@@ -13,3 +13,7 @@ output "web_private_sg" {
 output "web_fe_lb" {
   value = module.alb.web_lb_id
 }
+
+output "web_fqdn" {
+  value = module.alb.web_fqdn
+}
