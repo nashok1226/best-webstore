@@ -16,3 +16,5 @@ For executing the tf scripts, please follow the below steps:
 4. Any modification on the input parameters could be made on the file "best.tfvars"
 
 5. Any change in the user_data script on "ec2_install_apache.sh"
+
+6. base code will cretae one EC2 from the EC2 module (task-1) and 2 EC2 instances (task-2) from the ASG Module
