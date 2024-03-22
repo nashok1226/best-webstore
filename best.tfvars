@@ -29,8 +29,8 @@ public_access_cidr  = "0.0.0.0/0"
 
 ##ASG
 launch_template_name    = "web-fe"
-ami_owners              = "099720109477"
-ami_name_string         = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"
+ami_owners              = "137112412989"
+ami_name_string         = "al2023-ami-2023.4.*.1-kernel-6.1-x86_64"
 asg_max_size            = 3
 asg_min_size            = 1
 asg_desired_size        = 2

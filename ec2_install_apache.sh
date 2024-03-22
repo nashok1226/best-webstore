@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install apache2 -y
-sudo 'Welcome to best seller!' > /var/www/html/index.html
+sudo yum install -y httpd
+sudo systemctl start httpd
+sudo aws s3 cp s3://best-web-catalouge/ /var/www/html/  --recursive

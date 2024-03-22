@@ -1,0 +1,18 @@
+body {
+  background: lightblue;
+}
+
+img {max-width:100%; height:auto}
+
+
+div {
+  padding: 1em;
+}
+
+code {
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
