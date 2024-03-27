@@ -24,6 +24,8 @@ resource "aws_instance" "main" {
 
   user_data = var.user_data
 
+  iam_instance_profile = var.instance_profile
+
   #depends_on = [ module.vpc.natgw_route ]
 }
 
