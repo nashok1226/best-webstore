@@ -28,8 +28,7 @@ module "vpc" {
 module "ec2" {
   source           = "./ec2"
   instance_profile = module.iam.ec2_instance_profile
-  #private_subnet   = module.vpc.private_subnet
-  private_subnet   = module.vpc.public_subnet
+  private_subnet   = module.vpc.private_subnet
   ec2_type         = var.ec2_type
   ec2_vol_size     = var.ec2_vol_size
   ec2_name         = var.ec2_name
