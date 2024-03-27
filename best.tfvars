@@ -37,6 +37,6 @@ asg_desired_size        = 2
 health_grace_period     = 300
 auto_scale_cooldown     = 300
 scaleup_cpu_threshold   = 80
-scaledown_cpu_threshold = 20
+scaledown_cpu_threshold = 60
 scale_grace_priod       = 120
 scale_eval_time_period  = 2
